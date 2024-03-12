@@ -8,8 +8,8 @@ class Pantallainicial_0403 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Pantalla Inicial Rodriguez0403"),
-        backgroundColor: Colors.brown,
+        title: const Text("Card container Rodriguez0403"),
+        backgroundColor: Color(0xff487379),
       ),
       body: Center(
         child: Column(

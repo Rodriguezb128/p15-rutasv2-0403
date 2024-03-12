@@ -9,17 +9,27 @@ class Pantalla2_0403 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Pantalla2 Rodriguez0403"),
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Color(0xff5f0000),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: Text("Pantalla"),
-            )
-          ],
+        child: Container(
+          color: Color(0xff93220e),
+          width: double.infinity,
+          height: 150,
+          child: Card(
+            elevation: 10,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+            color: Color(0xffad4646),
+            margin: EdgeInsets.all(32),
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                "Container Card",
+                style: TextStyle(fontSize: 30, color: Color(0xffffffff)),
+              ),
+            ),
+          ),
         ),
       ),
     );

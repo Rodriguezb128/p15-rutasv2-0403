@@ -8,21 +8,22 @@ class Pantalla1_0403 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Pantalla1 Rodriguez_0403"),
-        backgroundColor: Color(0xff23704a),
+        title: const Text("Card p1 Rodriguez_0403"),
+        backgroundColor: Color(0xff9d5337),
       ),
       body: Center(
-        child: Column(
-          children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text("Mover a Pantalla2"),
+        child: Card(
+          elevation: 10,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          color: Color(0xffe8bc6a),
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Text(
+              "Card Rodriguez",
+              style: TextStyle(fontSize: 30, color: Color(0xff5a3408)),
             ),
-            Container(
-              padding: const EdgeInsets.all(16.0),
-              child: const Text("Valeria Rodriguez"),
-            )
-          ],
+          ),
         ),
       ),
     );
